@@ -1,5 +1,12 @@
-# scuba-steve package
+# scuba-steve
 
-A short description of your package.
+Names are hard. Scuba Steve will find your files with the same base name and allow
+you to cycle through them. There are two commands: 'scuba-steve:toggle', scuba-steve:start-dive'.
+Dive will refresh the path cache, and toggle will cycle through similar files (foo.hpp, foo.cpp, etc).
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+Example keymap:
+
+```
+'atom-workspace:not([mini])':
+	'alt-o': 'scuba-steve:toggle'
+```
