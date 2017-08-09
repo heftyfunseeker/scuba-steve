@@ -16,7 +16,6 @@ module.exports = (projectPaths) ->
 			if !(pathCache[base]) then pathCache[base] = new Array()
 
 			pathCache[base].push(filepath)
-			console.log "cache[#{base}] = #{filepath}"
 
 	emit('path-cache-loaded', {pathCache: pathCache})
 

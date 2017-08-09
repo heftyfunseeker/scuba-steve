@@ -61,7 +61,6 @@ module.exports = ScubaSteve =
 			stevesNextFile = cache[nextPathIndex]
 
 			if fs.isFileSync(stevesNextFile)
-				console.log "ScubaSteve, opening #{stevesNextFile}"
 				atom.workspace.open(stevesNextFile)
 				return
 
