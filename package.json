@@ -1,0 +1,24 @@
+{
+	"name": "scuba-steve",
+	"main": "./lib/scuba-steve",
+	"version": "0.0.1",
+	"description": "Cycle through files with the same base name (ignoring extension). ie foo.cpp, foo.h, etc",
+	"keywords": [
+		"C++",
+		"C",
+		"Objective-C",
+		"Objective-C++",
+		"header",
+		"source",
+		"switch",
+		"navigation"
+	],
+	"repository": "https://github.com/heftyfunseeker/scuba-steve",
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	},
+	"dependencies": {
+		"fs-plus": "^3.0.0"
+	}
+}

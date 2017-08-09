@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+0.1.0 - First Release	/Users/niccosimone/github/scuba-steve/CHANGELOG.md	/^## 0.1.0 - First Release$/;"	function	line:1
+# Keybindings require three things to be fully defined	/Users/niccosimone/github/scuba-steve/keymaps/scuba-steve.cson	/^# Keybindings require three things to be fully defined: A selector that is$/;"	function	line:1
+# https	/Users/niccosimone/github/scuba-steve/keymaps/scuba-steve.cson	/^# https:\/\/atom.io\/docs\/latest\/behind-atom-keymaps-in-depth$/;"	function	line:9
+atom-workspace	/Users/niccosimone/github/scuba-steve/keymaps/scuba-steve.cson	/^'atom-workspace':$/;"	function	line:10
+ctrl-alt-o	/Users/niccosimone/github/scuba-steve/keymaps/scuba-steve.cson	/^  'ctrl-alt-o': 'scuba-steve:toggle'$/;"	function	line:11
+ScubaSteveView	/Users/niccosimone/github/scuba-steve/lib/scuba-steve-view.coffee	/^class ScubaSteveView$/;"	function	line:2
+constructor	/Users/niccosimone/github/scuba-steve/lib/scuba-steve-view.coffee	/^  constructor: (serializedState) ->$/;"	function	line:3
+serialize	/Users/niccosimone/github/scuba-steve/lib/scuba-steve-view.coffee	/^  serialize: ->$/;"	function	line:15
+destroy	/Users/niccosimone/github/scuba-steve/lib/scuba-steve-view.coffee	/^  destroy: ->$/;"	function	line:18
+getElement	/Users/niccosimone/github/scuba-steve/lib/scuba-steve-view.coffee	/^  getElement: ->$/;"	function	line:21
+# See https	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^# See https:\/\/atom.io\/docs\/latest\/hacking-atom-package-word-count#menus for more details$/;"	function	line:1
+context-menu	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^'context-menu':$/;"	function	line:2
+atom-text-editor	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^  'atom-text-editor': [$/;"	function	line:3
+label	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^      'label': 'Toggle scuba-steve'$/;"	function	line:5
+command	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^      'command': 'scuba-steve:toggle'$/;"	function	line:6
+menu	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^'menu': [$/;"	function	line:9
+label	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^    'label': 'Packages'$/;"	function	line:11
+submenu	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^    'submenu': [$/;"	function	line:12
+label	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^      'label': 'scuba-steve'$/;"	function	line:13
+submenu	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^      'submenu': [$/;"	function	line:14
+label	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^          'label': 'Toggle'$/;"	function	line:16
+command	/Users/niccosimone/github/scuba-steve/menus/scuba-steve.cson	/^          'command': 'scuba-steve:toggle'$/;"	function	line:17
+name	/Users/niccosimone/github/scuba-steve/package.json	/^  "name": "scuba-steve",$/;"	function	line:2
+main	/Users/niccosimone/github/scuba-steve/package.json	/^  "main": ".\/lib\/scuba-steve",$/;"	function	line:3
+version	/Users/niccosimone/github/scuba-steve/package.json	/^  "version": "0.0.0",$/;"	function	line:4
+description	/Users/niccosimone/github/scuba-steve/package.json	/^  "description": "A short description of your package",$/;"	function	line:5
+keywords	/Users/niccosimone/github/scuba-steve/package.json	/^  "keywords": [$/;"	function	line:6
+activationCommands	/Users/niccosimone/github/scuba-steve/package.json	/^  "activationCommands": {$/;"	function	line:8
+atom-workspace	/Users/niccosimone/github/scuba-steve/package.json	/^    "atom-workspace": "scuba-steve:toggle"$/;"	function	line:9
+repository	/Users/niccosimone/github/scuba-steve/package.json	/^  "repository": "https:\/\/github.com\/heftyfunseeker\/scuba-steve",$/;"	function	line:11
+license	/Users/niccosimone/github/scuba-steve/package.json	/^  "license": "MIT",$/;"	function	line:12
+engines	/Users/niccosimone/github/scuba-steve/package.json	/^  "engines": {$/;"	function	line:13
+atom	/Users/niccosimone/github/scuba-steve/package.json	/^    "atom": ">=1.0.0 <2.0.0"$/;"	function	line:14
+dependencies	/Users/niccosimone/github/scuba-steve/package.json	/^  "dependencies": {$/;"	function	line:16
+scuba-steve package	/Users/niccosimone/github/scuba-steve/README.md	/^# scuba-steve package$/;"	function	line:1
+ScubaSteve	/Users/niccosimone/github/scuba-steve/spec/scuba-steve-spec.coffee	/^describe "ScubaSteve", ->$/;"	function	line:8
+when the scuba-steve:toggle event is triggered	/Users/niccosimone/github/scuba-steve/spec/scuba-steve-spec.coffee	/^  describe "when the scuba-steve:toggle event is triggered", ->$/;"	function	line:15
+hides and shows the modal panel	/Users/niccosimone/github/scuba-steve/spec/scuba-steve-spec.coffee	/^    it "hides and shows the modal panel", ->$/;"	function	line:16
+hides and shows the view	/Users/niccosimone/github/scuba-steve/spec/scuba-steve-spec.coffee	/^    it "hides and shows the view", ->$/;"	function	line:39
+ScubaSteveView	/Users/niccosimone/github/scuba-steve/spec/scuba-steve-view-spec.coffee	/^describe "ScubaSteveView", ->$/;"	function	line:3
+has one valid test	/Users/niccosimone/github/scuba-steve/spec/scuba-steve-view-spec.coffee	/^  it "has one valid test", ->$/;"	function	line:4
+.scuba-steve	/Users/niccosimone/github/scuba-steve/styles/scuba-steve.less	/^.scuba-steve {$/;"	function	line:7
+activate	/Users/niccosimone/github/scuba-steve/lib/scuba-steve.coffee	/^	activate: (state) ->$/;"	function	line:10
+deactivate	/Users/niccosimone/github/scuba-steve/lib/scuba-steve.coffee	/^	deactivate: ->$/;"	function	line:20
+startDive	/Users/niccosimone/github/scuba-steve/lib/scuba-steve.coffee	/^	startDive: ->$/;"	function	line:24
+stopDive	/Users/niccosimone/github/scuba-steve/lib/scuba-steve.coffee	/^	stopDive: ->$/;"	function	line:41
+toggle	/Users/niccosimone/github/scuba-steve/lib/scuba-steve.coffee	/^	toggle: ->$/;"	function	line:46
