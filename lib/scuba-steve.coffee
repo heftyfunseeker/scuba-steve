@@ -21,6 +21,11 @@ module.exports = ScubaSteve =
 		@subscriptions.dispose()
 		stopDive()
 
+	consumeSignal: (registry) ->
+		@busySignal = registry.create()
+		@subscriptions.add(@busySignal)
+
+
 	startDive: ->
 		@stopDive()
 
@@ -32,11 +37,14 @@ module.exports = ScubaSteve =
 
 		taskPath = require.resolve('./load-base-cache')
 
+		@busySignal.add('Scuba Steve')
+
 		@startDiveTask = Task.once taskPath, projectPaths, ->
 			console.log 'task has finished'
 
 		@startDiveTask.on 'path-cache-loaded', (data) =>
 			@pathCache = data.pathCache
+			@busySignal.clear()
 
 	stopDive: ->
 		@pathCache = null
