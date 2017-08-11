@@ -8,6 +8,7 @@ module.exports = ScubaSteve =
 	pathCache : null
 
 	activate: (state) ->
+		@active = true
 		# Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
 		@subscriptions = new CompositeDisposable
 
@@ -15,11 +16,10 @@ module.exports = ScubaSteve =
 		@subscriptions.add atom.commands.add 'atom-workspace', 'scuba-steve:toggle': => @toggle()
 		@subscriptions.add atom.commands.add 'atom-workspace', 'scuba-steve:start-dive': => @startDive()
 
-		process.nextTick => @startDive()
-
 	deactivate: ->
 		@subscriptions.dispose()
 		stopDive()
+		@active = false
 
 	consumeSignal: (registry) ->
 		@busySignal = registry.create()
@@ -27,6 +27,8 @@ module.exports = ScubaSteve =
 
 
 	startDive: ->
+		return if !@active
+
 		@stopDive()
 
 		projectPaths = atom.project.getPaths()
@@ -37,10 +39,10 @@ module.exports = ScubaSteve =
 
 		taskPath = require.resolve('./load-base-cache')
 
-		@busySignal.add('Scuba Steve')
+		@busySignal.add('Scuba Steve') unless !@busySignal
 
 		@startDiveTask = Task.once taskPath, projectPaths, ->
-			console.log 'task has finished'
+			console.log 'scuba-steve finished dive'
 
 		@startDiveTask.on 'path-cache-loaded', (data) =>
 			@pathCache = data.pathCache
@@ -52,6 +54,8 @@ module.exports = ScubaSteve =
 		@startDiveTask = null
 
 	toggle: ->
+		return if !@active
+
 		return unless @pathCache
 
 		editor = atom.workspace.getActiveTextEditor()
