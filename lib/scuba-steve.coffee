@@ -46,7 +46,7 @@ module.exports = ScubaSteve =
 
 		@startDiveTask.on 'path-cache-loaded', (data) =>
 			@pathCache = data.pathCache
-			@busySignal.clear()
+			@busySignal.clear() unless !@busySignal
 
 	stopDive: ->
 		@pathCache = null
