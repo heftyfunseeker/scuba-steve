@@ -1,7 +1,7 @@
 {
   "name": "scuba-steve",
   "main": "./lib/scuba-steve",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "Cycle through files with the same base name (ignoring extension). ie foo.cpp, foo.h, etc",
   "keywords": [
     "C++",
